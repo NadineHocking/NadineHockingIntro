@@ -220,11 +220,13 @@ footer {
 .intro {
     margin: 5rem auto;
     text-align: center;
+    width: 70%;
 }
 
 @media (max-width: 768px) {
     .intro {
         margin: 2rem 1rem;
+        width: 90%;
     }  
 }
 
@@ -346,14 +348,18 @@ header {
     }
 }
 
-
 /* Form */
-
 
 .form {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+    }  
 }
 
 input[type=text], select, textarea {
@@ -367,9 +373,9 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: var(--btn-primary-bg);
     color: var( --btn-text);
     border: 1px solid var(--btn-primary-bg);
@@ -379,14 +385,13 @@ input[type=text], select, textarea {
     font-size: 1.1rem;
     font-weight: 400;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: var(--btn-primary-outline-bg);
     color: var( --btn-text-hover);
-  }
+}
 
-  input:focus { background-color:#ffffff;
+input:focus { background-color:#ffffff;
     border: 1px solid #6b23b8 !important; 
-  }
-  
+}
