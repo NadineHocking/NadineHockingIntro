@@ -218,7 +218,7 @@ footer {
 }
 
 .intro {
-    margin: 4rem auto;
+    margin: 5rem auto;
     text-align: center;
 }
 
@@ -306,6 +306,46 @@ header {
 .t-center  {
     text-align: center;
 }
+
+/* Spacing */
+
+.m-y-1 {
+    margin: 1rem 0;
+}
+
+.m-y-2 {
+    margin: 2rem 0;
+}
+
+.m-y-5 {
+    margin: 5rem 0;
+}
+
+.m-t-2 {
+    margin-top: 2rem;
+}
+.m-t-5 {
+    margin-top: 5rem;
+}
+
+.m-t-10 {
+    margin-top: 10rem;
+}
+
+@media (max-width: 768px) {
+    .m-t-10 {
+        margin-top: 2rem;
+    }
+
+    .m-t-5 {
+        margin-top: 1rem;
+    }
+
+    .m-t-2 {
+        margin-top: 1rem;
+    }
+}
+
 
 /* Form */
 
