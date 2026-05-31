@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Nadine Hocking Intro</title>
 </head> 
-<body class="vh-100">
-    <div class="container vh-90">
+<body>
+    <div class="container">
         <header class="d-flex">
             <a href="https://github.com/NadineHocking/NadineHockingIntro" rel="home" role="link" aria-label="NDesign Logo" class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="" id="logo">
@@ -17,16 +17,26 @@
                 <path d="M28.9452 56.4526C13.3932 56.4526 0.748596 43.7989 0.748596 28.256C0.748596 12.7131 13.3932 0.050293 28.9452 0.050293C44.4972 0.050293 57.1417 12.704 57.1417 28.2469C57.1417 43.7897 44.488 56.4526 28.9452 56.4526ZM28.9452 4.04572C15.5966 4.04572 4.73488 14.9074 4.73488 28.2469C4.73488 41.5863 15.5966 52.4572 28.9452 52.4572C42.2937 52.4572 53.1554 41.5954 53.1554 28.2469C53.1554 14.8983 42.2846 4.04572 28.9452 4.04572Z"/>
                 </svg>
             </a>
+            <nav class="d-flex">
+                <ul class="nav-list d-flex">
+                   <li>About</li>
+                   <li>Projects</li>
+
+                </ul>
             <a class="btn" href="mailto:nadinehocking@gmail.com" aria-label="Contact me">Contact me</a>
+            </nav>
         </header>
         <main>
             <section class="intro">
                 <h1>Hello <span class="material-icons">waving_hand</span>, I'm Nadine</h1>
                 <p class="intro-text">I am a UI/UX designer and aspiring developer with strong foundations in visual and interactive design, communications and psychology. I begun my career in the industry 15 years ago and during this time I have worked professionally for a variety of small and large businesses, startups and agencies in the UK and internationally on both permanent and freelance bases. </p>
             </section>
+            <!-- <article>
+                <h2 class="t-center">Services</h2>
+            </article> -->
             <section class="d-flex info-boxes">
                 <div class="info-box">
-                    <h2><span class="material-icons icon">insights</span> UX Research</h2>
+                    <h3><span class="material-icons icon">insights</span> UX Research</h3>
                     <p></p>
                     <ul class="d-list">
                         <li>Research methods & statistics</li>
@@ -38,7 +48,7 @@
                     </ul>
                 </div><!-- / info-box -->
                 <div class="info-box">
-                    <h2><span class="material-icons icon">design_services</span> UI / UX Design</h2>
+                    <h3><span class="material-icons icon">design_services</span> UI / UX Design</h3>
                     <ul class="d-list">
                         <li>Visual & interaction design</li>
                         <li>Discovery and ideation</li>
@@ -49,7 +59,7 @@
                     </ul>
                 </div><!-- / info-box -->
                 <div class="info-box">
-                    <h2><span class="material-icons icon">code</span> Development</h2>
+                    <h3><span class="material-icons icon">code</span> Development</h3>
                     <ul class="d-list">
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -62,6 +72,35 @@
             </section>
             <section class="intro">
                 <a class="btn" href="https://nadinehocking.com" aria-label="View my website">View my website<span class="material-icons" >arrow_outward</span></a>
+
+            </section>
+            <article class="section-title">
+                <h2 class="t-center">Ask a question</h2>
+            </article>
+            <section class="form">
+                <form action="action_page.php">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+            
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email">
+            
+                <label for="project">Project type</label>
+                <select id="country" name="country">
+                    <option value="all">All</option>
+                    <option value="visual">Visual Design / Branding</option>
+                    <option value="uiux">UI / UX design</option>
+                    <option value="dev">Development</option>
+                </select>
+            
+                <label for="subject">Message</label>
+                <textarea id="message" name="message" placeholder="Ask a question.." style="height:160px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+                </form>
+
 
             </section>
         </main>
